@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "ستتم إزالة {name}. ستستمر تنبيهات القواعد الأخرى.",
   "{n} options formatted correctly": "تم تنسيق {n} من الخيارات بشكل صحيح",
   "{seconds} seconds": "{seconds} ثانية",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "المستخدم {used} من مساحة تخزين قدرها {quota}. لا يشمل ذلك تنزيلات الفيديو أو الملفات الأخرى على القرص."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "المستخدم {used} من مساحة تخزين قدرها {quota}. لا يشمل ذلك تنزيلات الفيديو أو الملفات الأخرى على القرص.",
+  "Public-domain books for the eBook library.": "كتب من الملكية العامة لمكتبة الكتب الإلكترونية.",
+  "Searchable catalog for Project Gutenberg books.": "فهرس قابل للبحث لكتب Project Gutenberg.",
+  "Game metadata, artwork and release dates.": "بيانات الألعاب وصورها وتواريخ إصدارها.",
+  "Live scores, schedules and standings.": "النتائج المباشرة والجداول والترتيب.",
+  "Sports metadata, fixtures and results.": "بيانات الرياضة والمباريات والنتائج.",
+  "Subtitle search and download.": "البحث عن الترجمات وتنزيلها.",
+  "Intro, recap and credits timings for television.": "توقيتات المقدمة والملخص وشارات النهاية للمسلسلات.",
+  "Intro, recap, credits and preview timings.": "توقيتات المقدمة والملخص وشارات النهاية والمقاطع التشويقية.",
+  "Service status for installed addons.": "حالة الخدمات للإضافات المثبتة.",
+  "Please include artist credit if you intend to reuse these.": "يرجى ذكر اسم الفنان إذا كنت تنوي إعادة استخدام هذه الأعمال.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "يستخدم الشريط الجانبي للإعدادات مجموعة أيقونات منفصلة لم يرسمها Abiyyu.",
+  "Controller button glyphs:": "رموز أزرار وحدات التحكم:",
 };
 
 export default settingsRefinements;

@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} sẽ bị xóa. Thông báo từ các quy tắc khác vẫn tiếp tục.",
   "{n} options formatted correctly": "Đã định dạng đúng {n} tùy chọn",
   "{seconds} seconds": "{seconds} giây",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "Đã dùng {used} trong hạn mức lưu trữ {quota}. Không bao gồm video đã tải và các tệp khác trên ổ đĩa."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "Đã dùng {used} trong hạn mức lưu trữ {quota}. Không bao gồm video đã tải và các tệp khác trên ổ đĩa.",
+  "Public-domain books for the eBook library.": "Sách thuộc phạm vi công cộng cho thư viện sách điện tử.",
+  "Searchable catalog for Project Gutenberg books.": "Danh mục sách Project Gutenberg có thể tìm kiếm.",
+  "Game metadata, artwork and release dates.": "Siêu dữ liệu, hình ảnh và ngày phát hành trò chơi.",
+  "Live scores, schedules and standings.": "Tỷ số trực tiếp, lịch thi đấu và bảng xếp hạng.",
+  "Sports metadata, fixtures and results.": "Siêu dữ liệu thể thao, lịch thi đấu và kết quả.",
+  "Subtitle search and download.": "Tìm kiếm và tải phụ đề.",
+  "Intro, recap and credits timings for television.": "Thời điểm mở đầu, tóm tắt và danh đề của chương trình truyền hình.",
+  "Intro, recap, credits and preview timings.": "Thời điểm mở đầu, tóm tắt, danh đề và đoạn giới thiệu.",
+  "Service status for installed addons.": "Trạng thái dịch vụ của các addon đã cài đặt.",
+  "Please include artist credit if you intend to reuse these.": "Vui lòng ghi tên nghệ sĩ nếu bạn định sử dụng lại các tác phẩm này.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "Thanh bên cài đặt sử dụng một bộ biểu tượng riêng, không do Abiyyu vẽ.",
+  "Controller button glyphs:": "Ký hiệu nút tay cầm:",
 };
 
 export default settingsRefinements;

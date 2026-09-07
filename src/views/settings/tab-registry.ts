@@ -1,7 +1,7 @@
 import anilistLogo from "@/assets/anilist.png";
 import malLogo from "@/assets/mal.png";
 import simklLogo from "@/assets/simkl.png";
-import traktLogo from "@/assets/trakt.png";
+import traktLogo from "@/assets/trakt.svg";
 import letterboxdLogo from "@/assets/addon-logos/letterboxd.png";
 import stremioLogo from "@/assets/stremio.png";
 import type { SectionId } from "./shared";
@@ -62,6 +62,10 @@ export const SECTION_TABS: Partial<Record<SectionId, TabEntry[]>> = {
   p2p: [
     { id: "engine", label: "Engine", icon: "TorrentEngine" },
     { id: "server", label: "Server", icon: "TorrentServer" },
+  ],
+  plugins: [
+    { id: "plugins", label: "Plugins", icon: "Puzzle" },
+    { id: "repositories", label: "Repositories", icon: "Package" },
   ],
   library: [
     { id: "home", label: "Home", icon: "House" },

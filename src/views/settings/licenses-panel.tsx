@@ -25,6 +25,7 @@ import metacriticLogo from "@/assets/service-logos/metacritic.png";
 import opensubtitlesLogo from "@/assets/opensubtitles.png";
 import subdlLogo from "@/assets/service-logos/subdl.png";
 import subsourceLogo from "@/assets/service-logos/subsource.png";
+import gestdownLogo from "@/assets/service-logos/gestdown.png";
 import wyzieLogo from "@/assets/wyzie.png";
 import traktLogo from "@/assets/trakt.svg";
 import simklLogo from "@/assets/simkl.png";
@@ -32,7 +33,9 @@ import anilistLogo from "@/assets/anilist.png";
 import malLogo from "@/assets/mal.png";
 import letterboxdLogo from "@/assets/addon-logos/letterboxd.png";
 import aniskipLogo from "@/assets/service-logos/aniskip.png";
-import introdbLogo from "@/assets/service-logos/theintrodb.png";
+import theIntroDbLogo from "@/assets/service-logos/theintrodb.png";
+import introdbLogo from "@/assets/service-logos/introdb.png";
+import skipdbLogo from "@/assets/service-logos/skipdb.png";
 import realdebridLogo from "@/assets/addon-logos/realdebrid.png";
 import premiumizeLogo from "@/assets/addon-logos/premiumize.png";
 import alldebridLogo from "@/assets/addon-logos/alldebrid.webp";
@@ -47,6 +50,7 @@ import airplayMark from "@/assets/service-logos/airplayvideo.svg";
 import dlnaMark from "@/assets/service-logos/dlna.svg";
 import easynewsLogo from "@/assets/addon-logos/easynews.png";
 import aiostreamsLogo from "@/assets/addon-logos/aiostreams.png";
+import aiostatusLogo from "@/assets/service-logos/aiostatus.png";
 import localFilesLogo from "@/assets/addon-logos/local-files.png";
 import mangaupdatesLogo from "@/assets/mangaupdates.png";
 import suwayomiLogo from "@/assets/service-logos/suwayomi.png";
@@ -59,7 +63,9 @@ import auddLogo from "@/assets/addon-logos/auddio.webp";
 import discordLogo from "@/assets/service-logos/discord.png";
 import telegramLogo from "@/assets/service-logos/telegram.png";
 import nytLogo from "@/assets/service-logos/nyt.png";
-import apiSportsLogo from "@/assets/service-logos/apisports.png";
+import gutenbergLogo from "@/assets/gutenberg.png";
+import igdbLogo from "@/assets/service-logos/igdb.svg";
+import espnLogo from "@/assets/service-logos/espn.png";
 import cloudflareLogo from "@/assets/cloudflare.png";
 import svpLogo from "@/assets/service-logos/svp.png";
 import tauriLogo from "@/assets/oss-logos/tauri.png";
@@ -272,7 +278,10 @@ const METADATA: Credit[] = [
   { name: "Rotten Tomatoes", blurb: "Critic and audience scores shown on detail pages.", url: "https://www.rottentomatoes.com", logo: rtLogo },
   { name: "Metacritic", blurb: "Metascores shown on detail pages.", url: "https://www.metacritic.com", logo: metacriticLogo },
   { name: "The New York Times", blurb: "Bestseller lists shown in the eBook section.", url: "https://developer.nytimes.com", logo: nytLogo },
-  { name: "API-Sports", blurb: "Fixtures and results for leagues not covered by the default sports provider.", url: "https://api-sports.io", logo: apiSportsLogo },
+  { name: "Project Gutenberg", blurb: "Public-domain books for the eBook library.", url: "https://www.gutenberg.org", logo: gutenbergLogo },
+  { name: "Gutendex", blurb: "Searchable catalog for Project Gutenberg books.", url: "https://gutendex.com" },
+  { name: "IGDB", blurb: "Game metadata, artwork and release dates.", url: "https://www.igdb.com", logo: igdbLogo },
+  { name: "ESPN", blurb: "Live scores, schedules and standings.", url: "https://www.espn.com", logo: espnLogo },
 ];
 
 const TRACKERS: Credit[] = [
@@ -287,12 +296,16 @@ const SUBTITLES: Credit[] = [
   { name: "OpenSubtitles", blurb: "Subtitle search and download.", url: "https://www.opensubtitles.com", logo: opensubtitlesLogo },
   { name: "SUBDL", blurb: "Subtitle search and download.", url: "https://subdl.com", logo: subdlLogo },
   { name: "Subsource", blurb: "Subtitle search and download.", url: "https://subsource.net", logo: subsourceLogo },
+  { name: "Gestdown", blurb: "Subtitle search and download.", url: "https://www.gestdown.info", logo: gestdownLogo },
+  { name: "Podnapisi", blurb: "Subtitle search and download.", url: "https://www.podnapisi.net" },
   { name: "Wyzie", blurb: "Subtitle search requiring no API key.", url: "https://wyzie.ru", logo: wyzieLogo },
 ];
 
 const SKIPPING: Credit[] = [
   { name: "AniSkip", blurb: "Community-contributed opening and ending timings for anime.", url: "https://aniskip.com", logo: aniskipLogo },
-  { name: "TheIntroDB", blurb: "Intro and credits timings for films and television.", url: "https://theintrodb.org", logo: introdbLogo },
+  { name: "TheIntroDB", blurb: "Intro and credits timings for films and television.", url: "https://theintrodb.org", logo: theIntroDbLogo },
+  { name: "IntroDB", blurb: "Intro, recap and credits timings for television.", url: "https://introdb.app", logo: introdbLogo },
+  { name: "SkipDB", blurb: "Intro, recap, credits and preview timings.", url: "https://skipdb.tv", logo: skipdbLogo },
 ];
 
 const DEBRID: Credit[] = [
@@ -325,6 +338,7 @@ const ADDONS: Credit[] = [
   },
   { name: "Easynews", blurb: "Usenet search and playback.", url: "https://www.easynews.com", logo: easynewsLogo },
   { name: "AIOStreams", blurb: "Aggregates multiple stream sources into a single addon.", url: "https://github.com/Viren070/AIOStreams", logo: aiostreamsLogo },
+  { name: "AIOStatus", blurb: "Service status for installed addons.", url: "https://p01--status--sdfgdgfsgdfs--s2qq-tktv.code.run/configure", logo: aiostatusLogo },
   { name: "Local Files", blurb: "Playback of media already stored on the device.", url: "https://www.stremio.com", logo: localFilesLogo },
 ];
 

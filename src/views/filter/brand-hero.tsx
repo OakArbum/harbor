@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { tmdbCompanyArt, type CompanyArt } from "@/lib/providers/tmdb";
 import { useSettings } from "@/lib/settings";
 import { useT } from "@/lib/i18n";
+import { useLogoTone } from "@/lib/logo-tone";
 
 const EMPTY: CompanyArt = { logo: null, backdrop: null, count: 0, span: "" };
 
@@ -40,6 +41,7 @@ export function BrandHero({
   children?: React.ReactNode;
 }) {
   const t = useT();
+  const tone = useLogoTone(art.logo);
   const [lit, setLit] = useState(false);
   useEffect(() => {
     if (!art.backdrop) return;
@@ -70,7 +72,12 @@ export function BrandHero({
       <div className="brand-hero-body">
         <span className="brand-hero-kicker">{kicker}</span>
         {art.logo ? (
-          <img src={art.logo} alt={title} className="brand-hero-logo" draggable={false} />
+          <img
+            src={art.logo}
+            alt={title}
+            className={`brand-hero-logo ${tone ? `is-${tone}` : "is-measuring"}`}
+            draggable={false}
+          />
         ) : (
           <h1 className="brand-hero-title">{title}</h1>
         )}

@@ -1,3 +1,4 @@
+import ebookSources from "./it/ebook-sources";
 import settingsRefinements from "./it/settings-refinements";
 import catalog01 from "./it/catalog-01";
 import catalog02 from "./it/catalog-02";
@@ -12,8 +13,11 @@ import catalog10 from "./it/catalog-10";
 import catalog11 from "./it/catalog-11";
 import catalog12 from "./it/catalog-12";
 import coverage from "./it/coverage";
+import plugins from "./it/plugins";
+import brands from "./it/brands";
 
 const it: Record<string, string> = {
+  ...ebookSources,
   ...catalog01,
   ...catalog02,
   ...catalog03,
@@ -28,6 +32,8 @@ const it: Record<string, string> = {
   ...catalog12,
   ...coverage,
   ...settingsRefinements,
+  ...plugins,
+  ...brands,
 };
 
 export default it;

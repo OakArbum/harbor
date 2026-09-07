@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} sera supprimée. Les alertes de vos autres règles continueront.",
   "{n} options formatted correctly": "{n} options correctement formatées",
   "{seconds} seconds": "{seconds} secondes",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} utilisés sur un quota de {quota}. Les vidéos téléchargées et les autres fichiers sur le disque ne sont pas inclus."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} utilisés sur un quota de {quota}. Les vidéos téléchargées et les autres fichiers sur le disque ne sont pas inclus.",
+  "Public-domain books for the eBook library.": "Livres du domaine public pour la bibliothèque numérique.",
+  "Searchable catalog for Project Gutenberg books.": "Catalogue consultable des livres de Project Gutenberg.",
+  "Game metadata, artwork and release dates.": "Métadonnées, illustrations et dates de sortie des jeux.",
+  "Live scores, schedules and standings.": "Scores en direct, calendriers et classements.",
+  "Sports metadata, fixtures and results.": "Métadonnées sportives, rencontres et résultats.",
+  "Subtitle search and download.": "Recherche et téléchargement de sous-titres.",
+  "Intro, recap and credits timings for television.": "Minutages des introductions, résumés et génériques de fin des séries.",
+  "Intro, recap, credits and preview timings.": "Minutages des introductions, résumés, génériques de fin et aperçus.",
+  "Service status for installed addons.": "État des services des extensions installées.",
+  "Please include artist credit if you intend to reuse these.": "Veuillez créditer l'artiste si vous souhaitez réutiliser ces créations.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "La barre latérale des paramètres utilise un jeu d'icônes distinct, qui n'a pas été dessiné par Abiyyu.",
+  "Controller button glyphs:": "Symboles des boutons de manette :",
 };
 
 export default settingsRefinements;

@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} verrà rimossa. Gli avvisi delle altre regole continueranno.",
   "{n} options formatted correctly": "{n} opzioni formattate correttamente",
   "{seconds} seconds": "{seconds} secondi",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} utilizzati su una quota di {quota}. I video scaricati e gli altri file sul disco non sono inclusi."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} utilizzati su una quota di {quota}. I video scaricati e gli altri file sul disco non sono inclusi.",
+  "Public-domain books for the eBook library.": "Libri di pubblico dominio per la biblioteca di eBook.",
+  "Searchable catalog for Project Gutenberg books.": "Catalogo consultabile dei libri di Project Gutenberg.",
+  "Game metadata, artwork and release dates.": "Metadati, immagini e date di uscita dei giochi.",
+  "Live scores, schedules and standings.": "Risultati in diretta, calendari e classifiche.",
+  "Sports metadata, fixtures and results.": "Metadati sportivi, incontri e risultati.",
+  "Subtitle search and download.": "Ricerca e download dei sottotitoli.",
+  "Intro, recap and credits timings for television.": "Tempi di intro, riepiloghi e titoli di coda delle serie TV.",
+  "Intro, recap, credits and preview timings.": "Tempi di intro, riepiloghi, titoli di coda e anteprime.",
+  "Service status for installed addons.": "Stato dei servizi per gli addon installati.",
+  "Please include artist credit if you intend to reuse these.": "Se intendi riutilizzare queste opere, indica il nome dell'artista.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "La barra laterale delle impostazioni usa un set di icone separato, non disegnato da Abiyyu.",
+  "Controller button glyphs:": "Simboli dei pulsanti del controller:",
 };
 
 export default settingsRefinements;

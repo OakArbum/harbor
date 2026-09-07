@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "Se eliminará {name}. Las alertas de las demás reglas continuarán.",
   "{n} options formatted correctly": "{n} opciones con formato correcto",
   "{seconds} seconds": "{seconds} segundos",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} usados de una cuota de {quota}. No incluye vídeos descargados ni otros archivos del disco."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} usados de una cuota de {quota}. No incluye vídeos descargados ni otros archivos del disco.",
+  "Public-domain books for the eBook library.": "Libros de dominio público para la biblioteca de eBooks.",
+  "Searchable catalog for Project Gutenberg books.": "Catálogo de libros de Project Gutenberg con búsqueda.",
+  "Game metadata, artwork and release dates.": "Metadatos, imágenes y fechas de lanzamiento de juegos.",
+  "Live scores, schedules and standings.": "Marcadores en directo, calendarios y clasificaciones.",
+  "Sports metadata, fixtures and results.": "Metadatos deportivos, encuentros y resultados.",
+  "Subtitle search and download.": "Búsqueda y descarga de subtítulos.",
+  "Intro, recap and credits timings for television.": "Tiempos de introducciones, resúmenes y créditos de series.",
+  "Intro, recap, credits and preview timings.": "Tiempos de introducciones, resúmenes, créditos y avances.",
+  "Service status for installed addons.": "Estado de los servicios de los addons instalados.",
+  "Please include artist credit if you intend to reuse these.": "Incluye el crédito del artista si tienes intención de reutilizar estas obras.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "La barra lateral de ajustes utiliza un conjunto de iconos independiente que no fue dibujado por Abiyyu.",
+  "Controller button glyphs:": "Símbolos de los botones del mando:",
 };
 
 export default settingsRefinements;

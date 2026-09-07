@@ -48,6 +48,7 @@ function glideToTop(el: HTMLElement): void {
 const BasicsPanel = lazy(() => import("./settings/basics-panel").then((m) => ({ default: m.BasicsPanel })));
 const AccountStub = lazy(() => import("./settings/account").then((m) => ({ default: m.AccountStub })));
 const LibraryPanel = lazy(() => import("./settings/library-panel").then((m) => ({ default: m.LibraryPanel })));
+const PluginsPanel = lazy(() => import("./settings/plugins-panel").then((m) => ({ default: m.PluginsPanel })));
 const RelaySection = lazy(() => import("./settings/relay-section").then((m) => ({ default: m.RelaySection })));
 const StreamingSourcesPanel = lazy(() => import("./settings/streaming-sources-panel").then((m) => ({ default: m.StreamingSourcesPanel })));
 const StreamFiltersPanel = lazy(() => import("./settings/stream-filters-panel").then((m) => ({ default: m.StreamFiltersPanel })));
@@ -79,6 +80,7 @@ const SECTION_PRELOAD: Partial<Record<SectionId, () => Promise<unknown>>> = {
   basics: () => import("./settings/basics-panel"),
   account: () => import("./settings/account"),
   library: () => import("./settings/library-panel"),
+  plugins: () => import("./settings/plugins-panel"),
   relay: () => import("./settings/relay-section"),
   streaming: () => import("./settings/streaming-sources-panel"),
   streamFilters: () => import("./settings/stream-filters-panel"),
@@ -127,6 +129,10 @@ const SECTION_META: Record<SectionId, { label: string; sub: string }> = {
   library: {
     label: "Library & metadata",
     sub: "Optional keys that unlock TMDB rails, baked-in poster ratings, fanart, and TVDB episode data.",
+  },
+  plugins: {
+    label: "Plugins",
+    sub: "Small scripts that find streams, manga and books on sites Harbor does not know about, installed from repositories you choose.",
   },
   trakt: {
     label: "Trakt",
@@ -690,6 +696,8 @@ export function Settings({ visible = true }: { visible?: boolean }) {
           {active === "streamFilters" && <StreamFiltersPanel />}
 
           {active === "p2p" && <P2PPanel />}
+
+          {active === "plugins" && <PluginsPanel />}
 
           {active === "language" && <LanguagePanel />}
           {active === "subtitles" && <SubtitlesPanel />}

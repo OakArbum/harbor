@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "Reguła {name} zostanie usunięta. Powiadomienia z pozostałych reguł będą nadal działać.",
   "{n} options formatted correctly": "Poprawnie sformatowane opcje: {n}",
   "{seconds} seconds": "{seconds} s",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "Wykorzystano {used} z dostępnych {quota}. Nie obejmuje to pobranych filmów ani innych plików na dysku."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "Wykorzystano {used} z dostępnych {quota}. Nie obejmuje to pobranych filmów ani innych plików na dysku.",
+  "Public-domain books for the eBook library.": "Książki z domeny publicznej do biblioteki eBooków.",
+  "Searchable catalog for Project Gutenberg books.": "Przeszukiwalny katalog książek Project Gutenberg.",
+  "Game metadata, artwork and release dates.": "Metadane, grafiki i daty premier gier.",
+  "Live scores, schedules and standings.": "Wyniki na żywo, terminarze i tabele.",
+  "Sports metadata, fixtures and results.": "Metadane sportowe, terminarze i wyniki.",
+  "Subtitle search and download.": "Wyszukiwanie i pobieranie napisów.",
+  "Intro, recap and credits timings for television.": "Znaczniki czasu czołówek, podsumowań i napisów końcowych seriali.",
+  "Intro, recap, credits and preview timings.": "Znaczniki czasu czołówek, podsumowań, napisów końcowych i zapowiedzi.",
+  "Service status for installed addons.": "Status usług zainstalowanych dodatków.",
+  "Please include artist credit if you intend to reuse these.": "Jeśli zamierzasz ponownie wykorzystać te prace, podaj autora.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "Panel boczny ustawień korzysta z osobnego zestawu ikon, których nie narysował Abiyyu.",
+  "Controller button glyphs:": "Symbole przycisków kontrolera:",
 };
 
 export default settingsRefinements;

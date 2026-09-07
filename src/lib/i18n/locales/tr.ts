@@ -1,3 +1,4 @@
+import ebookSources from "./tr/ebook-sources";
 import settingsRefinements from "./tr/settings-refinements";
 import miscA from "./tr/misc-a";
 import miscB from "./tr/misc-b";
@@ -14,8 +15,11 @@ import recent from "./tr/recent";
 import residual from "./tr/residual";
 import finalResidual from "./tr/final";
 import coverage from "./tr/coverage";
+import plugins from "./tr/plugins";
+import brands from "./tr/brands";
 
 const tr: Record<string, string> = {
+  ...ebookSources,
   ...miscA,
   ...miscB,
   ...miscC,
@@ -32,6 +36,8 @@ const tr: Record<string, string> = {
   ...finalResidual,
   ...coverage,
   ...settingsRefinements,
+  ...plugins,
+  ...brands,
 };
 
 export default tr;

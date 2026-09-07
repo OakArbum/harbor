@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} हटा दिया जाएगा। दूसरे नियमों के अलर्ट जारी रहेंगे।",
   "{n} options formatted correctly": "{n} विकल्पों का प्रारूप सही है",
   "{seconds} seconds": "{seconds} सेकंड",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{quota} की संग्रहण सीमा में से {used} उपयोग हुआ है। डाउनलोड किए गए वीडियो और डिस्क की अन्य फ़ाइलें शामिल नहीं हैं।"
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{quota} की संग्रहण सीमा में से {used} उपयोग हुआ है। डाउनलोड किए गए वीडियो और डिस्क की अन्य फ़ाइलें शामिल नहीं हैं।",
+  "Public-domain books for the eBook library.": "ईबुक लाइब्रेरी के लिए सार्वजनिक डोमेन की किताबें।",
+  "Searchable catalog for Project Gutenberg books.": "Project Gutenberg की किताबों का खोजने योग्य कैटलॉग।",
+  "Game metadata, artwork and release dates.": "गेम का मेटाडेटा, चित्र और रिलीज़ की तारीखें।",
+  "Live scores, schedules and standings.": "लाइव स्कोर, समय-सारणी और अंक तालिका।",
+  "Sports metadata, fixtures and results.": "खेलों का मेटाडेटा, मैचों का कार्यक्रम और नतीजे।",
+  "Subtitle search and download.": "सबटाइटल खोजना और डाउनलोड करना।",
+  "Intro, recap and credits timings for television.": "टीवी कार्यक्रमों के इंट्रो, पिछले भाग के सार और क्रेडिट का समय।",
+  "Intro, recap, credits and preview timings.": "इंट्रो, पिछले भाग के सार, क्रेडिट और प्रीव्यू का समय।",
+  "Service status for installed addons.": "इंस्टॉल किए गए ऐडऑन की सेवाओं की स्थिति।",
+  "Please include artist credit if you intend to reuse these.": "यदि आप इनका दोबारा उपयोग करना चाहते हैं, तो कृपया कलाकार को श्रेय दें।",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "सेटिंग्स के साइडबार में एक अलग आइकन सेट इस्तेमाल होता है, जिसे Abiyyu ने नहीं बनाया है।",
+  "Controller button glyphs:": "कंट्रोलर के बटन चिह्न:",
 };
 
 export default settingsRefinements;

@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} será removida. Os alertas das outras regras continuarão.",
   "{n} options formatted correctly": "{n} opções com formato correto",
   "{seconds} seconds": "{seconds} segundos",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} usados de uma cota de {quota}. Vídeos baixados e outros arquivos no disco não estão incluídos."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} usados de uma cota de {quota}. Vídeos baixados e outros arquivos no disco não estão incluídos.",
+  "Public-domain books for the eBook library.": "Livros de domínio público para a biblioteca de eBooks.",
+  "Searchable catalog for Project Gutenberg books.": "Catálogo pesquisável dos livros do Project Gutenberg.",
+  "Game metadata, artwork and release dates.": "Metadados, imagens e datas de lançamento de jogos.",
+  "Live scores, schedules and standings.": "Placares ao vivo, calendários e classificações.",
+  "Sports metadata, fixtures and results.": "Metadados esportivos, partidas e resultados.",
+  "Subtitle search and download.": "Busca e download de legendas.",
+  "Intro, recap and credits timings for television.": "Tempos de abertura, recapitulação e créditos de séries.",
+  "Intro, recap, credits and preview timings.": "Tempos de abertura, recapitulação, créditos e prévias.",
+  "Service status for installed addons.": "Status dos serviços dos addons instalados.",
+  "Please include artist credit if you intend to reuse these.": "Inclua o crédito do artista se pretende reutilizar estas obras.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "A barra lateral das configurações usa um conjunto separado de ícones, que não foi desenhado por Abiyyu.",
+  "Controller button glyphs:": "Símbolos dos botões dos controles:",
 };
 
 export default settingsRefinements;

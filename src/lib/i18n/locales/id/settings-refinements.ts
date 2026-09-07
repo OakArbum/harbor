@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} akan dihapus. Notifikasi dari aturan lain tetap berjalan.",
   "{n} options formatted correctly": "{n} opsi diformat dengan benar",
   "{seconds} seconds": "{seconds} detik",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} terpakai dari jatah penyimpanan {quota}. Unduhan video dan berkas lain di disk tidak termasuk."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} terpakai dari jatah penyimpanan {quota}. Unduhan video dan berkas lain di disk tidak termasuk.",
+  "Public-domain books for the eBook library.": "Buku domain publik untuk pustaka eBook.",
+  "Searchable catalog for Project Gutenberg books.": "Katalog buku Project Gutenberg yang dapat dicari.",
+  "Game metadata, artwork and release dates.": "Metadata, gambar, dan tanggal rilis gim.",
+  "Live scores, schedules and standings.": "Skor langsung, jadwal, dan klasemen.",
+  "Sports metadata, fixtures and results.": "Metadata olahraga, jadwal pertandingan, dan hasil.",
+  "Subtitle search and download.": "Pencarian dan unduhan subtitel.",
+  "Intro, recap and credits timings for television.": "Waktu intro, rangkuman, dan kredit untuk acara televisi.",
+  "Intro, recap, credits and preview timings.": "Waktu intro, rangkuman, kredit, dan cuplikan.",
+  "Service status for installed addons.": "Status layanan untuk addon yang terpasang.",
+  "Please include artist credit if you intend to reuse these.": "Harap cantumkan kredit seniman jika ingin menggunakan kembali karya ini.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "Bilah samping pengaturan menggunakan set ikon terpisah yang tidak digambar oleh Abiyyu.",
+  "Controller button glyphs:": "Simbol tombol pengontrol:",
 };
 
 export default settingsRefinements;

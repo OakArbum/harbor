@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} kaldırılacak. Diğer kurallarınızın bildirimleri devam edecek.",
   "{n} options formatted correctly": "{n} seçenek doğru biçimlendirildi",
   "{seconds} seconds": "{seconds} saniye",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{quota} depolama sınırının {used} kadarı kullanılıyor. İndirilen videolar ve diskteki diğer dosyalar buna dahil değil."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{quota} depolama sınırının {used} kadarı kullanılıyor. İndirilen videolar ve diskteki diğer dosyalar buna dahil değil.",
+  "Public-domain books for the eBook library.": "eKitap kütüphanesi için kamu malı kitaplar.",
+  "Searchable catalog for Project Gutenberg books.": "Project Gutenberg kitaplarının aranabilir kataloğu.",
+  "Game metadata, artwork and release dates.": "Oyun meta verileri, görselleri ve çıkış tarihleri.",
+  "Live scores, schedules and standings.": "Canlı skorlar, fikstürler ve puan durumları.",
+  "Sports metadata, fixtures and results.": "Spor meta verileri, fikstürler ve sonuçlar.",
+  "Subtitle search and download.": "Altyazı arama ve indirme.",
+  "Intro, recap and credits timings for television.": "Dizilerin giriş, özet ve kapanış jeneriği zamanlamaları.",
+  "Intro, recap, credits and preview timings.": "Giriş, özet, kapanış jeneriği ve ön izleme zamanlamaları.",
+  "Service status for installed addons.": "Yüklü eklentilerin hizmet durumu.",
+  "Please include artist credit if you intend to reuse these.": "Bu çalışmaları yeniden kullanmayı düşünüyorsanız lütfen sanatçının adını belirtin.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "Ayarlar kenar çubuğu, Abiyyu tarafından çizilmemiş ayrı bir simge seti kullanır.",
+  "Controller button glyphs:": "Kontrolcü düğme simgeleri:",
 };
 
 export default settingsRefinements;

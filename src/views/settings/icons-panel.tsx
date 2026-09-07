@@ -10,6 +10,7 @@ import { AssetDownloadFeedback, useAssetDownload, type AssetDownload } from "./a
 
 import abiyyuAvatar from "@/assets/artists/abiyyu.webp";
 import stassAvatar from "@/assets/artists/stass-motion.jpg";
+import wavingCat from "@/assets/artists/wave.svg";
 
 type Glob = Record<string, string>;
 type LazyGlob = Record<string, () => Promise<unknown>>;
@@ -407,16 +408,41 @@ export function IconsPanel() {
       </Section>
 
       <Section title={t("Using these")}>
-        <p className={"max-w-[74ch] " + ROW_DESC}>
-          {t(
-            "These are Harbor's own, drawn for Harbor. Take them for a theme, a fork, a mockup, a personal project. Keep the credit on the artists and do not sell the set on its own.",
-          )}
-        </p>
-        <p className="hset-attr-fineprint mt-3">
-          {t(
-            "The controller button glyphs elsewhere in Harbor are not ours. They come from Kenney's Input Prompts, released into the public domain under CC0.",
-          )}
-        </p>
+        <div className="flex flex-col items-start gap-5 min-[900px]:flex-row min-[900px]:items-center min-[900px]:gap-8">
+          <div className="min-w-0 flex-1">
+            <p className={"max-w-[74ch] " + ROW_DESC}>
+              {t("Please include artist credit if you intend to reuse these.")}
+            </p>
+            <p className="hset-attr-fineprint mt-3">
+              {t("The settings sidebar uses a separate icon set, not drawn by Abiyyu.")}
+            </p>
+            <p className="hset-attr-fineprint mt-3">
+              {t("Controller button glyphs:")}{" "}
+              <a
+                href="https://kenney.nl/assets/input-prompts"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(event) => {
+                  event.preventDefault();
+                  void openUrl("https://kenney.nl/assets/input-prompts");
+                }}
+                className="underline decoration-current/40 underline-offset-2 hover:decoration-current"
+              >
+                Kenney Input Prompts
+              </a>{" (CC0)."}
+            </p>
+          </div>
+          <img
+            src={wavingCat}
+            alt=""
+            width={600}
+            height={391.63}
+            loading="lazy"
+            decoding="async"
+            draggable={false}
+            className="h-auto w-40 max-w-full shrink-0 select-none self-end object-contain min-[900px]:self-center xl:w-48"
+          />
+        </div>
       </Section>
     </>
   );

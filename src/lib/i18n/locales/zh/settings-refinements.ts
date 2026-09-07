@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "将移除{name}。其他规则的提醒将继续发送。",
   "{n} options formatted correctly": "{n} 个选项的格式正确",
   "{seconds} seconds": "{seconds} 秒",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "存储配额为 {quota}，已使用 {used}。不包括下载的视频和磁盘上的其他文件。"
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "存储配额为 {quota}，已使用 {used}。不包括下载的视频和磁盘上的其他文件。",
+  "Public-domain books for the eBook library.": "电子书库中的公版图书。",
+  "Searchable catalog for Project Gutenberg books.": "可搜索的 Project Gutenberg 图书目录。",
+  "Game metadata, artwork and release dates.": "游戏元数据、图片和发行日期。",
+  "Live scores, schedules and standings.": "实时比分、赛程和积分榜。",
+  "Sports metadata, fixtures and results.": "体育元数据、赛程和比赛结果。",
+  "Subtitle search and download.": "字幕搜索与下载。",
+  "Intro, recap and credits timings for television.": "电视剧的片头、前情回顾和片尾时间点。",
+  "Intro, recap, credits and preview timings.": "片头、前情回顾、片尾和预告时间点。",
+  "Service status for installed addons.": "已安装插件的服务状态。",
+  "Please include artist credit if you intend to reuse these.": "如果您打算重复使用这些作品，请注明艺术家。",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "设置侧边栏使用独立的图标集，并非由 Abiyyu 绘制。",
+  "Controller button glyphs:": "控制器按钮图标：",
 };
 
 export default settingsRefinements;

@@ -1,5 +1,7 @@
 import settingsRefinements from "./en/settings-refinements";
+
 const en: Record<string, string> = {
+  "Build identity. Useful when filing a bug report.": "Build identity. Useful when filing a bug report.",
   "nav.home": "Home",
   "nav.discover": "Discover",
   "nav.catalogs": "Catalogs",

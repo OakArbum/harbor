@@ -1,3 +1,4 @@
+import ebookSources from "./ja/ebook-sources";
 import settingsRefinements from "./ja/settings-refinements";
 import addons from "./ja/addons";
 import appFill from "./ja/app-fill";
@@ -32,8 +33,11 @@ import together from "./ja/together";
 import used from "./ja/used";
 import questions from "./ja/questions";
 import wired from "./ja/wired";
+import plugins from "./ja/plugins";
+import brands from "./ja/brands";
 
 const ja: Record<string, string> = {
+  ...ebookSources,
   ...coverage,
   ...sweep,
   ...wired,
@@ -68,6 +72,8 @@ const ja: Record<string, string> = {
   ...together,
   ...questions,
   ...settingsRefinements,
+  ...plugins,
+  ...brands,
 };
 
 export default ja;

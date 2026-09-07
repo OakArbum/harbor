@@ -15,7 +15,7 @@ import { CollapseToggle } from "@/chrome/sidebar/collapse-toggle";
 import { SidebarBigPictureEntry } from "@/chrome/sidebar/big-picture-entry";
 import { NAV_ITEMS, applyNavCustomization, type NavItem } from "@/chrome/nav-items";
 
-const PRIMARY_IDS = new Set(["home", "discover", "catalogs", "movies", "shows", "kids", "anime", "live", "sports", "vod"]);
+const PRIMARY_IDS = new Set(["home", "discover", "catalogs", "movies", "shows", "kids", "anime", "live", "vod"]);
 
 export function Sidebar() {
   const { view, setView, chromeHidden } = useView();
@@ -387,4 +387,3 @@ function NavItem({
     </button>
   );
 }
-

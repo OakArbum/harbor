@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "Правило «{name}» будет удалено. Оповещения по остальным правилам продолжат работать.",
   "{n} options formatted correctly": "Правильно отформатировано параметров: {n}",
   "{seconds} seconds": "{seconds} сек.",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "Использовано {used} из доступных {quota}. Скачанные видео и другие файлы на диске не учитываются."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "Использовано {used} из доступных {quota}. Скачанные видео и другие файлы на диске не учитываются.",
+  "Public-domain books for the eBook library.": "Книги в общественном достоянии для библиотеки электронных книг.",
+  "Searchable catalog for Project Gutenberg books.": "Каталог книг Project Gutenberg с поиском.",
+  "Game metadata, artwork and release dates.": "Метаданные, изображения и даты выхода игр.",
+  "Live scores, schedules and standings.": "Счёт в реальном времени, расписания и турнирные таблицы.",
+  "Sports metadata, fixtures and results.": "Спортивные метаданные, расписания матчей и результаты.",
+  "Subtitle search and download.": "Поиск и загрузка субтитров.",
+  "Intro, recap and credits timings for television.": "Тайминги заставок, кратких пересказов и титров сериалов.",
+  "Intro, recap, credits and preview timings.": "Тайминги заставок, кратких пересказов, титров и анонсов.",
+  "Service status for installed addons.": "Состояние сервисов установленных дополнений.",
+  "Please include artist credit if you intend to reuse these.": "Если вы планируете использовать эти работы, пожалуйста, укажите автора.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "В боковой панели настроек используется отдельный набор значков, нарисованный не Abiyyu.",
+  "Controller button glyphs:": "Символы кнопок контроллера:",
 };
 
 export default settingsRefinements;

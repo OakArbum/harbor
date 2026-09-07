@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} wird entfernt. Benachrichtigungen deiner anderen Regeln bleiben aktiv.",
   "{n} options formatted correctly": "{n} Optionen korrekt formatiert",
   "{seconds} seconds": "{seconds} Sekunden",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} von {quota} verfügbarem Speicher belegt. Heruntergeladene Videos und andere Dateien auf dem Laufwerk sind nicht enthalten."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} von {quota} verfügbarem Speicher belegt. Heruntergeladene Videos und andere Dateien auf dem Laufwerk sind nicht enthalten.",
+  "Public-domain books for the eBook library.": "Gemeinfreie Bücher für die E-Book-Bibliothek.",
+  "Searchable catalog for Project Gutenberg books.": "Durchsuchbarer Katalog der Bücher von Project Gutenberg.",
+  "Game metadata, artwork and release dates.": "Spielmetadaten, Bilder und Veröffentlichungstermine.",
+  "Live scores, schedules and standings.": "Live-Ergebnisse, Spielpläne und Tabellen.",
+  "Sports metadata, fixtures and results.": "Sportmetadaten, Spieltermine und Ergebnisse.",
+  "Subtitle search and download.": "Untertitel suchen und herunterladen.",
+  "Intro, recap and credits timings for television.": "Zeitmarken für Vorspann, Rückblick und Abspann von Serien.",
+  "Intro, recap, credits and preview timings.": "Zeitmarken für Vorspann, Rückblick, Abspann und Vorschau.",
+  "Service status for installed addons.": "Dienststatus für installierte Addons.",
+  "Please include artist credit if you intend to reuse these.": "Bitte nenne den Künstler, wenn du diese Werke weiterverwenden möchtest.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "Die Seitenleiste der Einstellungen verwendet einen separaten Symbolsatz, der nicht von Abiyyu gezeichnet wurde.",
+  "Controller button glyphs:": "Controller-Tastensymbole:",
 };
 
 export default settingsRefinements;

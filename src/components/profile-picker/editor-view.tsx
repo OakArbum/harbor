@@ -20,7 +20,6 @@ import { DiscoverIcon } from "@/components/icons/discover-icon";
 import { LibraryIcon } from "@/components/icons/library-icon";
 import { LiveTvIcon } from "@/components/icons/live-tv-icon";
 import { MoviesIcon } from "@/components/icons/movies-icon";
-import { SportsIcon } from "@/components/icons/sports-icon";
 import { TvIcon } from "@/components/icons/tv-icon";
 import {
   anyTabLocked,
@@ -1406,8 +1405,6 @@ function TabIcon({ iconKey }: { iconKey: LockableTabMeta["iconKey"] }) {
       return <TvIcon active={false} />;
     case "anime":
       return <AnimeIcon active={false} />;
-    case "sports":
-      return <SportsIcon active={false} />;
     case "liveTv":
       return <LiveTvIcon active={false} />;
     case "calendar":

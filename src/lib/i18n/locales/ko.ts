@@ -1,3 +1,4 @@
+import ebookSources from "./ko/ebook-sources";
 import settingsRefinements from "./ko/settings-refinements";
 import coverage from "./ko/coverage";
 import catalog01 from "./ko/catalog-01";
@@ -14,8 +15,11 @@ import catalog11 from "./ko/catalog-11";
 import catalog12 from "./ko/catalog-12";
 import catalog13 from "./ko/catalog-13";
 import currentTail from "./ko/current-tail";
+import plugins from "./ko/plugins";
+import brands from "./ko/brands";
 
 const ko: Record<string, string> = {
+  ...ebookSources,
   ...coverage,
   ...catalog01,
   ...catalog02,
@@ -32,6 +36,8 @@ const ko: Record<string, string> = {
   ...catalog13,
   ...currentTail,
   ...settingsRefinements,
+  ...plugins,
+  ...brands,
 };
 
 export default ko;

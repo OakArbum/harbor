@@ -12,7 +12,7 @@ import { useParental } from "@/lib/parental";
 import { useSettings } from "@/lib/settings";
 import { useView, type View } from "@/lib/view";
 
-const PRIMARY_IDS = new Set(["home", "discover", "movies", "shows", "kids", "anime", "live", "sports", "vod"]);
+const PRIMARY_IDS = new Set(["home", "discover", "movies", "shows", "kids", "anime", "live", "vod"]);
 
 export function DraculaSidebar() {
   const { view, setView, chromeHidden } = useView();
@@ -221,5 +221,4 @@ function NavPill({
     </button>
   );
 }
-
 

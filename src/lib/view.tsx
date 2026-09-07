@@ -1,3 +1,4 @@
+import type { SportsGame } from "./sports/espn";
 import {
   createContext,
   useCallback,
@@ -19,7 +20,6 @@ import type { StreamingService } from "./settings";
 import { useSettings } from "./settings";
 import { useSmoothWheel } from "./smooth-scroll";
 import { useTogether } from "./together/provider";
-import type { SportsGame } from "./sports/espn";
 import { beginMarathonAdvance } from "./fullscreen-state";
 import { consumeBack } from "./back-intercept";
 import type { SubtitleLoadMetadata } from "./subtitles/types";
@@ -39,7 +39,6 @@ export type View =
   | "collections-hub"
   | "live"
   | "vod"
-  | "sports"
   | "downloads"
   | "wrapped"
   | "manga"
@@ -164,7 +163,6 @@ export type Frame =
   | { kind: "library" }
   | { kind: "live" }
   | { kind: "vod" }
-  | { kind: "sports" }
   | { kind: "downloads" }
   | { kind: "manga"; mangaId?: string }
   | { kind: "ebook"; ebookId?: string }
@@ -189,6 +187,7 @@ export type Frame =
   | { kind: "collections" }
   | { kind: "collections-hub" }
   | { kind: "filter"; filter: MetaFilter }
+  | { kind: "brands"; brand: "studio" | "network" }
   | { kind: "grid"; grid: GridSpec }
   | { kind: "award"; awardType: import("./providers/wikidata").AwardType }
   | { kind: "anime-award"; sourceId: import("./anime-awards").AwardSourceId }
@@ -227,6 +226,8 @@ export type SettingsSection =
   | "advanced";
 
 type ViewValue = {
+  matchDetailGame: SportsGame | null;
+  openMatchDetail: (game: SportsGame) => void;
   view: View;
   setView: (v: View) => void;
   openSettings: (section?: SettingsSection) => void;
@@ -251,8 +252,6 @@ type ViewValue = {
   ) => void;
   episodeDetail: { seriesId: string; season: number; episode: number; seriesMeta?: Meta } | null;
   openEpisodeDetail: (seriesId: string, season: number, episode: number, seriesMeta?: Meta) => void;
-  matchDetailGame: SportsGame | null;
-  openMatchDetail: (game: SportsGame) => void;
   promoteMetaToRoot: () => void;
   personId: number | null;
   openPerson: (id: number | null) => void;
@@ -284,6 +283,8 @@ type ViewValue = {
   openQueue: () => void;
   filter: MetaFilter | null;
   openFilter: (f: MetaFilter) => void;
+  brands: "studio" | "network" | null;
+  openBrands: (brand: "studio" | "network") => void;
   grid: GridSpec | null;
   openGrid: (g: GridSpec) => void;
   openCollections: () => void;
@@ -351,6 +352,8 @@ function pushFrame(cur: Frame[], next: Frame): Frame[] {
 
 function frameKey(f: Frame): string {
   switch (f.kind) {
+    case "match-detail":
+      return `match-detail:${f.game.id}`;
     case "home":
       return "home";
     case "settings":
@@ -383,8 +386,6 @@ function frameKey(f: Frame): string {
       return "live";
     case "vod":
       return "vod";
-    case "sports":
-      return "sports";
     case "downloads":
       return "downloads";
     case "manga":
@@ -421,6 +422,8 @@ function frameKey(f: Frame): string {
       return "collections-hub";
     case "filter":
       return `filter:${f.filter.kind}:${f.filter.mediaType}:${"name" in f.filter ? f.filter.name : f.filter.value}`;
+    case "brands":
+      return `brands:${f.brand}`;
     case "grid":
       return `grid:${f.grid.title}`;
     case "award":
@@ -435,8 +438,6 @@ function frameKey(f: Frame): string {
     }
     case "player":
       return `player:${f.src.meta.id}:${f.src.url.slice(-32)}`;
-    case "match-detail":
-      return `match-detail:${f.game.id}`;
   }
 }
 
@@ -522,7 +523,6 @@ export function ViewProvider({ children }: { children: ReactNode }) {
       if (f.kind === "collections-hub") return "collections-hub";
       if (f.kind === "live") return "live";
       if (f.kind === "vod") return "vod";
-      if (f.kind === "sports") return "sports";
       if (f.kind === "downloads") return "downloads";
       if (f.kind === "manga") return "manga";
       if (f.kind === "ebook") return "ebook";
@@ -593,12 +593,14 @@ export function ViewProvider({ children }: { children: ReactNode }) {
       top.kind === "episode-detail" && top.seriesMeta ? top.seriesMeta.id : "",
     ],
   );
+  const matchDetailGame = top.kind === "match-detail" ? top.game : null;
   const filterFrame = lastOfKind(stack, "filter");
   const filter = filterFrame ? filterFrame.filter : null;
+  const brandsFrame = lastOfKind(stack, "brands");
+  const brands = brandsFrame ? brandsFrame.brand : null;
   const gridFrame = lastOfKind(stack, "grid");
   const grid = gridFrame ? gridFrame.grid : null;
   const awardType = top.kind === "award" ? top.awardType : null;
-  const matchDetailGame = top.kind === "match-detail" ? top.game : null;
   const picker =
     top.kind === "picker"
       ? {
@@ -785,11 +787,6 @@ export function ViewProvider({ children }: { children: ReactNode }) {
           scrollMem.current.clear();
           rowScrollMem.current.clear();
           return [{ kind: "vod" }];
-        }
-        if (v === "sports") {
-          scrollMem.current.clear();
-          rowScrollMem.current.clear();
-          return [{ kind: "sports" }];
         }
         if (v === "manga") {
           scrollMem.current.clear();
@@ -1104,6 +1101,17 @@ export function ViewProvider({ children }: { children: ReactNode }) {
     [setNavStack],
   );
 
+  const openBrands = useCallback(
+    (brand: "studio" | "network") => {
+      setNavStack((cur) => {
+        const t = cur[cur.length - 1];
+        if (t.kind === "brands" && t.brand === brand) return cur;
+        return pushFrame(cur, { kind: "brands", brand });
+      });
+    },
+    [setNavStack],
+  );
+
   const openGrid = useCallback(
     (g: GridSpec) => {
       setNavStack((cur) => {
@@ -1268,11 +1276,13 @@ export function ViewProvider({ children }: { children: ReactNode }) {
       addonCollectionMeta,
       episodeDetail,
       openEpisodeDetail,
+      openQueue,
       matchDetailGame,
       openMatchDetail,
-      openQueue,
       filter,
       openFilter,
+      brands,
+      openBrands,
       grid,
       openGrid,
       openCollections,
@@ -1341,9 +1351,10 @@ export function ViewProvider({ children }: { children: ReactNode }) {
       addonCollectionMeta,
       episodeDetail,
       openEpisodeDetail,
+      filter,
+      brands,
       matchDetailGame,
       openMatchDetail,
-      filter,
       stackKinds,
       awardType,
       homeResetTick,
@@ -1360,6 +1371,7 @@ export function ViewProvider({ children }: { children: ReactNode }) {
       openProfile,
       openQueue,
       openFilter,
+      openBrands,
       grid,
       openGrid,
       openCollections,

@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name}を削除します。他のルールによる通知は引き続き届きます。",
   "{n} options formatted correctly": "{n}個のオプションの書式が正しいです",
   "{seconds} seconds": "{seconds}秒",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "保存容量{quota}のうち{used}を使用中です。ダウンロードした動画やディスク上の他のファイルは含みません。"
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "保存容量{quota}のうち{used}を使用中です。ダウンロードした動画やディスク上の他のファイルは含みません。",
+  "Public-domain books for the eBook library.": "電子書籍ライブラリ向けのパブリックドメインの書籍。",
+  "Searchable catalog for Project Gutenberg books.": "Project Gutenberg の書籍を検索できるカタログ。",
+  "Game metadata, artwork and release dates.": "ゲームのメタデータ、画像、発売日。",
+  "Live scores, schedules and standings.": "リアルタイムのスコア、日程、順位表。",
+  "Sports metadata, fixtures and results.": "スポーツのメタデータ、試合日程、結果。",
+  "Subtitle search and download.": "字幕の検索とダウンロード。",
+  "Intro, recap and credits timings for television.": "テレビ番組のイントロ、前回のあらすじ、エンドクレジットのタイミング。",
+  "Intro, recap, credits and preview timings.": "イントロ、前回のあらすじ、エンドクレジット、予告のタイミング。",
+  "Service status for installed addons.": "インストール済みアドオンのサービス稼働状況。",
+  "Please include artist credit if you intend to reuse these.": "これらの作品を再利用する場合は、アーティストのクレジットを記載してください。",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "設定のサイドバーには、Abiyyu が描いたものとは別のアイコンセットを使用しています。",
+  "Controller button glyphs:": "コントローラーのボタンアイコン：",
 };
 
 export default settingsRefinements;

@@ -1,3 +1,4 @@
+import ebookSources from "./ar/ebook-sources";
 import settingsRefinements from "./ar/settings-refinements";
 import uiFallback from "./ui-fallback";
 import experimentalUpdates from "./ar/experimental-updates";
@@ -35,8 +36,11 @@ import ageGate from "./ar/age-gate";
 import dynamic from "./ar/dynamic";
 import plurals from "./ar/plurals";
 import audit from "./ar/audit";
+import plugins from "./ar/plugins";
+import brands from "./ar/brands";
 
 const ar: Record<string, string> = {
+  ...ebookSources,
   ...uiFallback,
   ...coverage,
   ...settingsFill,
@@ -74,6 +78,8 @@ const ar: Record<string, string> = {
   ...audit,
   ...experimentalUpdates,
   ...settingsRefinements,
+  ...plugins,
+  ...brands,
 };
 
 export default ar;

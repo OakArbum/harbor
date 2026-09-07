@@ -1,3 +1,4 @@
+import ebookSources from "./pl/ebook-sources";
 import settingsRefinements from "./pl/settings-refinements";
 import catalog01 from "./pl/catalog-01";
 import catalog02 from "./pl/catalog-02";
@@ -17,8 +18,11 @@ import catalog15 from "./pl/catalog-15";
 import catalog16 from "./pl/catalog-16";
 import coverage from "./pl/coverage";
 import plurals from "./pl/plurals";
+import plugins from "./pl/plugins";
+import brands from "./pl/brands";
 
 const pl: Record<string, string> = {
+  ...ebookSources,
   ...catalog01,
   ...catalog02,
   ...catalog03,
@@ -38,6 +42,8 @@ const pl: Record<string, string> = {
   ...coverage,
   ...plurals,
   ...settingsRefinements,
+  ...plugins,
+  ...brands,
 };
 
 export default pl;

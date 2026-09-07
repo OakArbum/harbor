@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name}이(가) 삭제됩니다. 다른 규칙의 알림은 계속됩니다.",
   "{n} options formatted correctly": "옵션 {n}개의 형식이 올바릅니다",
   "{seconds} seconds": "{seconds}초",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "저장 한도 {quota} 중 {used} 사용 중입니다. 다운로드한 동영상과 디스크의 다른 파일은 포함되지 않습니다."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "저장 한도 {quota} 중 {used} 사용 중입니다. 다운로드한 동영상과 디스크의 다른 파일은 포함되지 않습니다.",
+  "Public-domain books for the eBook library.": "전자책 라이브러리를 위한 퍼블릭 도메인 도서.",
+  "Searchable catalog for Project Gutenberg books.": "Project Gutenberg 도서를 검색할 수 있는 카탈로그.",
+  "Game metadata, artwork and release dates.": "게임 메타데이터, 이미지 및 출시일.",
+  "Live scores, schedules and standings.": "실시간 점수, 일정 및 순위.",
+  "Sports metadata, fixtures and results.": "스포츠 메타데이터, 경기 일정 및 결과.",
+  "Subtitle search and download.": "자막 검색 및 다운로드.",
+  "Intro, recap and credits timings for television.": "TV 프로그램의 인트로, 지난 이야기 및 엔딩 크레딧 시간 정보.",
+  "Intro, recap, credits and preview timings.": "인트로, 지난 이야기, 엔딩 크레딧 및 예고편 시간 정보.",
+  "Service status for installed addons.": "설치된 애드온의 서비스 상태.",
+  "Please include artist credit if you intend to reuse these.": "이 작품들을 재사용하려면 아티스트의 이름을 밝혀 주세요.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "설정 사이드바는 Abiyyu가 그린 것이 아닌 별도의 아이콘 세트를 사용합니다.",
+  "Controller button glyphs:": "컨트롤러 버튼 기호:",
 };
 
 export default settingsRefinements;

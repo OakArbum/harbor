@@ -4922,12 +4922,19 @@ textarea.hset-field {
 }
 
 .brand-hero-logo {
-  max-block-size: 104px;
-  max-inline-size: min(420px, 100%);
+  max-block-size: 132px;
+  max-inline-size: min(460px, 100%);
   object-fit: contain;
   object-position: left center;
-  filter: brightness(0) invert(1) drop-shadow(0 2px 14px rgb(0 0 0 / 0.55));
-  opacity: 0.94;
+  filter: drop-shadow(0 4px 18px rgb(0 0 0 / 0.55));
+}
+
+.brand-hero-logo.is-measuring {
+  visibility: hidden;
+}
+
+.brand-hero-logo.is-dark {
+  filter: grayscale(1) invert(1) contrast(1.15) drop-shadow(0 4px 18px rgb(0 0 0 / 0.55));
 }
 
 .brand-hero-title {
@@ -4959,7 +4966,7 @@ textarea.hset-field {
   }
 
   .brand-hero-logo {
-    max-block-size: 76px;
+    max-block-size: 92px;
   }
 
   .brand-hero-title {
@@ -5144,6 +5151,8 @@ textarea.hset-field {
   opacity: .65;
 }
 .hset-rail-category[aria-expanded="true"] .hset-category-caret { transform: rotate(45deg); }
+.hset-rail-category.is-flat { inline-size: 100%; }
+.hset-rail-category.is-flat.is-on { color: var(--color-ink); }
 [dir="rtl"] .hset-rail-category[aria-expanded="false"] .hset-category-caret { transform: rotate(135deg); }
 .hset-category-pages { padding: 0 6px 6px; }
 .hset-category-pages[hidden] { display: none; }

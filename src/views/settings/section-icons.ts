@@ -13,6 +13,7 @@ export const SECTION_ICONS: Record<SectionId, string> = {
   streaming: "Waypoints",
   streamFilters: "Filter",
   p2p: "Share2",
+  plugins: "Puzzle",
   language: "Languages",
   subtitles: "Captions",
   player: "Play",

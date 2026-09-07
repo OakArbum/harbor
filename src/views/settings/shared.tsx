@@ -30,6 +30,7 @@ export type SectionId =
   | "streaming"
   | "streamFilters"
   | "p2p"
+  | "plugins"
   | "language"
   | "subtitles"
   | "player"

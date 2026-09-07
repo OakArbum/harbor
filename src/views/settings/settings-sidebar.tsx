@@ -44,6 +44,8 @@ const PAGE_LABELS: Record<string, string> = {
   "streaming.picker": "Source picker",
   "p2p.engine": "Torrent engine",
   "p2p.server": "Torrent server",
+  "plugins.plugins": "Installed plugins",
+  "plugins.repositories": "Plugin repositories",
   "library.cards": "Poster cards",
   "library.providers": "Metadata providers",
   "badges.badges": "Stream badges",
@@ -76,6 +78,8 @@ const BAND_LABELS: Record<string, string> = {
   DEVICES: "Controls & devices",
   SYSTEM: "System",
   HELP: "Help & about",
+  PLUGINS: "Plugins",
+  UPDATES: "Updates & backup",
 };
 
 const BAND_ICONS: Record<string, string> = {
@@ -87,7 +91,13 @@ const BAND_ICONS: Record<string, string> = {
   DEVICES: "InputDevices",
   SYSTEM: "SlidersHorizontal",
   HELP: "HelpAbout",
+  PLUGINS: "Puzzle",
+  UPDATES: "ArrowUpCircle",
 };
+
+function flatPage(band: Band): SectionId | null {
+  return band.sections.length === 1 && tabsFor(band.sections[0]).length === 0 ? band.sections[0] : null;
+}
 
 function bands(): Band[] {
   const out: Band[] = [];
@@ -295,7 +305,27 @@ export function SettingsSidebar({
     <nav id="hset-page-navigation" className="hset-rail" aria-label={t("Settings")}>
       <RailAccount />
       <div className="hset-rail-nav" key="browse">
-        {bands().map((band) => (
+        {bands().map((band) => {
+          const flat = flatPage(band);
+          if (flat) {
+            const on = flat === active;
+            return (
+              <div key={band.section} className="hset-rail-band" data-open={on || undefined}>
+                <button
+                  type="button"
+                  className={`hset-rail-category is-flat ${on ? "is-on" : ""}`}
+                  aria-current={on ? "page" : undefined}
+                  onClick={() => onSelect(flat)}
+                >
+                  <span className="hset-category-icon" aria-hidden>
+                    <Glyph name={BAND_ICONS[band.section] ?? SECTION_ICONS[flat]} size={20} />
+                  </span>
+                  <span className="hset-category-name">{t(BAND_LABELS[band.section] ?? meta[flat].label)}</span>
+                </button>
+              </div>
+            );
+          }
+          return (
           <div key={band.section} className="hset-rail-band" data-open={openBands.has(band.section) || undefined}>
             <button
               type="button"
@@ -319,7 +349,7 @@ export function SettingsSidebar({
               hidden={!openBands.has(band.section)}
             >
               {band.sections.map((id) => {
-                const tabs = ((!native && (id === "mpv" || id === "shaders")) ||
+                const tabs = ((!native && (id === "mpv" || id === "shaders" || id === "plugins")) ||
                   (id === "relay" && !settings.togetherRelayUrl))
                   ? []
                   : tabsFor(id).filter((tab) => native || id !== "theme" || tab.id !== "window");
@@ -342,7 +372,8 @@ export function SettingsSidebar({
               })}
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
     </nav>
   );

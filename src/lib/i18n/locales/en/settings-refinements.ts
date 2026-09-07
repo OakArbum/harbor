@@ -504,7 +504,19 @@ const settingsRefinements: Record<string, string> = {
   "{name} will be removed. Alerts from your other rules will continue.": "{name} will be removed. Alerts from your other rules will continue.",
   "{n} options formatted correctly": "{n} options formatted correctly",
   "{seconds} seconds": "{seconds} seconds",
-  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included."
+  "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.": "{used} used within a {quota} storage allowance. Video downloads and other files on disk are not included.",
+  "Public-domain books for the eBook library.": "Public-domain books for the eBook library.",
+  "Searchable catalog for Project Gutenberg books.": "Searchable catalog for Project Gutenberg books.",
+  "Game metadata, artwork and release dates.": "Game metadata, artwork and release dates.",
+  "Live scores, schedules and standings.": "Live scores, schedules and standings.",
+  "Sports metadata, fixtures and results.": "Sports metadata, fixtures and results.",
+  "Subtitle search and download.": "Subtitle search and download.",
+  "Intro, recap and credits timings for television.": "Intro, recap and credits timings for television.",
+  "Intro, recap, credits and preview timings.": "Intro, recap, credits and preview timings.",
+  "Service status for installed addons.": "Service status for installed addons.",
+  "Please include artist credit if you intend to reuse these.": "Please include artist credit if you intend to reuse these.",
+  "The settings sidebar uses a separate icon set, not drawn by Abiyyu.": "The settings sidebar uses a separate icon set, not drawn by Abiyyu.",
+  "Controller button glyphs:": "Controller button glyphs:",
 };
 
 export default settingsRefinements;
