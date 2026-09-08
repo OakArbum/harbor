@@ -53,7 +53,6 @@ mod cast_server;
 mod cf_relay;
 #[cfg(desktop)]
 mod cf_solver;
-mod discord_auth;
 #[cfg(desktop)]
 mod discord_rp;
 #[cfg(desktop)]
@@ -618,7 +617,6 @@ pub fn run() {
     let dvr_state = dvr::DvrState::new();
     let multiview_state = multiview::MultiviewState::new();
     let modal_overlay_state = modal_overlay::ModalOverlayState::new();
-    let discord_loopback_state = discord_auth::DiscordLoopbackState::new();
     let app_builder = tauri::Builder::default()
         .plugin(tauri_plugin_single_instance::init(|app, args, _cwd| {
             use tauri::{Emitter, Manager};
@@ -667,7 +665,6 @@ pub fn run() {
         .manage(dvr_state)
         .manage(multiview_state)
         .manage(modal_overlay_state)
-        .manage(discord_loopback_state)
         .manage(discord_rp::DiscordState::new())
         .manage(download::DownloadState::new());
 
@@ -927,7 +924,6 @@ pub fn run() {
             mpv::mpv_stop,
             mpv::mpv_release_media,
             mpv::mpv_restore_media_surface,
-            discord_auth::discord_auth_start,
             pip::pip_open,
             pip::pip_get_session,
             pip::pip_close,
